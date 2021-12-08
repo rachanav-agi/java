@@ -1,0 +1,403 @@
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arraylist {public static void main(String aa[]) 
+{
+    
+    ArrayList<String> list=new ArrayList<>();//Object
+    list.add("java");
+    list.add("php");
+    list.add("python");
+    
+    for(String x  : list)
+    {
+    System.out.println(x);    
+    }
+    
+}
+}
+------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arraylist {
+    
+	public static void main(String aa[]) 
+    {
+    
+        ArrayList<Integer> list=new ArrayList<>();//Object
+        list.add(567);
+        list.add(67890);
+        list.add(14);
+        
+        for(int  x  : list)
+        {
+        System.out.println(x);    
+        }
+        
+    }
+}
+
+------------------------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arraylist {
+    
+	public static void main(String aa[]) 
+    {
+//    Object //parent of all the classes
+        
+        
+        
+        ArrayList<Employee> list=new ArrayList<>();//Object
+        
+        Employee e1=new Employee("sakshi", "12");
+        Employee e2=new Employee("xyz", "13");
+        list.add(e1);
+        list.add(e2);
+        list.add(new Employee("abc","1234"));
+        
+        for(Employee  x  : list)
+        {
+        System.out.println(x);    
+        }
+        
+    }
+}
+
+ 
+
+class Employee
+{
+    String name,id;
+
+ 
+
+    public Employee(String name, String id) {
+        super();
+        this.name = name;
+        this.id = id;
+    }
+
+ 
+
+    public String getName() {
+        return name;
+    }
+
+ 
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+ 
+
+    public String getId() {
+        return id;
+    }
+
+ 
+
+    public void setId(String id) {
+        this.id = id;
+    }
+    
+    public String toString()
+    {
+    return "Name :"+name+"\nId  :"+id;
+    
+    }
+    }
+----------------------------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arraylist {
+    
+
+		   public static void main(String aa[]) 
+		    {
+//		    Object //parent of all the classes
+		        ArrayList<Studentt> list=new ArrayList<>();//Object
+		        Studentt s1=new Studentt("sakshi", "Present");
+		        Studentt s2=new Studentt("xyz", "Present");
+		        Studentt s3=new Studentt("abc", "Present");    
+		        Studentt s4=new Studentt("xy", "Present");
+		        
+		          list.add(s1);
+		          list.add(s2);
+		          list.add(s3);
+		          list.add(s4);
+		          for( Studentt s:list)
+		          {
+		              System.out.println(s.name+"  "+s.attendence);
+		          }
+		}
+
+		 
+
+		}
+
+		 
+
+
+		class Studentt
+		{
+		    String name;
+		    String attendence;
+		    public Studentt(String name, String attendence) {
+		        super();
+		        this.name = name;
+		        this.attendence = attendence;
+		    }    
+		}
+-------------------------------------------------------------------------------------------------------------
+package javademo;
+import java.util.*;
+
+
+
+public class pattern {
+	public static void main(String args[]) {
+
+
+
+
+		//1.language marks
+		System.out.println("Language Marks\n");
+		ArrayList<Language> list=new ArrayList<>();//Object
+		Language l1=new Language(" Java ", 9);
+		Language l2=new Language(" Android ",9);
+		Language l3=new Language(" C ", 10);
+		list.add(l1);
+		list.add(l2);
+		list.add(l3);
+
+		for( Language l:list)
+		{
+		System.out.println(l.subject+" "+l.mark);
+		}
+
+		}
+
+		}
+		class Language{
+		String subject;
+		int mark;
+		public Language(String subject, int mark) {
+		this.subject=subject;
+		this.mark=mark;
+
+		}
+
+---------------------------------------------------------------------------------------------------------
+
+
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arraylist {
+    
+
+	public static void main(String args[]) {
+
+		//2.student marks
+		System.out.println("book id price author\n");
+		ArrayList<Books> list=new ArrayList<>();//Object
+		Books b1=new Books("The overstory", 4, 380, "Richard");
+		list.add(b1);
+		for( Books b:list)
+		{
+		System.out.println(b.bname+" "+b.id+" "+b.price+" "+b.author);
+		}
+		}
+		}
+		class Books{
+		String bname;
+		int id;
+		int price;
+		String author;
+		public Books(String bname, int id,int price, String author) {
+		this.bname=bname;
+		this.id=id;
+		this.price=price;
+		this.author=author;
+		}
+		}
+------------------------------------------------------------------------------------------------------------
+
+package javademo;
+import java.util.Scanner;
+import java.util.ArrayList;
+
+public class arrayelents {
+	public static void main(String args[]) {
+
+		//2.student marks
+		System.out.println("Student Mark1 Mark2 Mark3\n");
+		ArrayList<Studentt> list=new ArrayList<>();//Object
+		Studentt s1=new Studentt(" varsha", 400, 380, 480);
+		list.add(s1);
+		for( Studentt s:list)
+		{
+		System.out.println(s.name+" "+s.mark1+" "+s.mark2+" "+s.mark3);
+		}
+		}
+		}
+		class Studentt{
+		String name;
+		int mark1;
+		int mark2;
+		int mark3;
+		public Studentt(String name, int mark1,int mark2, int mark3) {
+		this.name=name;
+		this.mark1=mark1;
+		this.mark2=mark2;
+		this.mark3=mark3;
+		}
+		}
+---------------------------------------------------------------------------------------------------------------
+package javademo;
+
+public class isEmpty {
+	public static void main(String args[]){  
+		String s1="";  
+		String s2="Rachana";  
+		  
+		System.out.println(s1.isEmpty());  
+		System.out.println(s2.isEmpty());  
+		}
+	}  
+
+
+-------------------------------------------------------------------------------------------------
+package javademo;
+import java.util.ArrayList;
+
+public class addAll {
+	public static void main(String[] args)
+	{
+	ArrayList<String> A1 = new ArrayList<>();
+	ArrayList<String> list = new ArrayList<String>(5);
+	ArrayList<Integer> l = new ArrayList<>();
+	
+	A1.add("Rachana");
+	A1.add("Roshini");
+	A1.add("Varshith");
+	A1.add("sarika");
+	A1.add("Harsha");
+	ArrayList<String> A2 = new ArrayList<>();  
+	
+	A2.add("Sanath");
+	
+	A1.addAll(A2);
+	
+	
+	System.out.println(A1);
+	
+	//clear elements from list
+		list.clear();
+		System.out.println(list);
+		
+		//remove all
+		 l.removeAll(A1);
+		   System.out.println(l);
+	        
+	        //add()
+	        System.out.println("A1: " + A1);
+	       
+	
+	}
+	}
+
+
+------------------------------------------------------------------------------------------------------
+package javademo;
+import java.util.Scanner;
+import java.util.*;
+
+public class index {
+	 public static void main(String[] args)
+	    {
+		 //get index
+		 ArrayList<Integer> arr = new ArrayList<Integer>(4);
+		
+	 
+	       
+	        arr.add(10);
+	        arr.add(20);
+	        arr.add(30);
+	        arr.add(40);
+	        int index=2;
+	 System.out.println("List: " + arr);
+	 int element = arr.get(2);
+	 System.out.println("the element at index 2 is "
+	                           + element);
+	 //remove index
+	 System.out.println("Initial array: " + arr);
+	 arr.remove(index);
+	 System.out.println("Final array: " + arr);
+	 
+	
+	  
+	        
+	    }
+	}
+	
+
+
+-----------------------------------------------------------------------------------------------------------
+
+package javademo;
+import java.util.ArrayList;
+
+public class demo {
+	public static void main(String args[]) {
+		//friend name nickname and contact
+		ArrayList<Friend> list=new ArrayList<>();
+		Friend f1=new Friend("Rachana","Rachu",5678909);
+		Friend f2=new Friend("Harsha","Haarsh",890956);
+		list.add(f1);
+		list.add(f2);
+		for(Friend f: list)
+		{
+		System.out.println("name is: "+f.name+"\nnick name is: "+f.nickName+"\ncontact is: "+f.contact);
+		System.out.println("\n");
+		}
+		//languages
+		ArrayList<String> l=new ArrayList<>();
+		l.add("java");
+		l.add("python");
+		l.add("php");
+		l.add("dbms");
+		l.add("ml");
+		l.add("c#");
+		System.out.println("the language list is:"+l);
+		l.remove("python");
+		System.out.println("after removing 'python' the language list is:"+l);
+		}
+		}
+
+		class Friend{
+		String name;
+		String nickName;
+		int contact;
+		public Friend(String name, String nickName, int contact) {
+		this.name=name;
+		this.nickName=nickName;
+		this.contact=contact;
+		}
+		}
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+		
