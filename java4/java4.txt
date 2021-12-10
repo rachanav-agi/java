@@ -1,0 +1,217 @@
+package javademo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class hash {
+	public static void main(String a[]) {
+		HashMap<String, Integer> map=new HashMap<>();
+		map.put("Java", 79);
+		map.put("PHP", 60);
+		map.put("Android", 90);
+		for(Map.Entry<String, Integer> en : map.entrySet()) {
+		System.out.println(en.getKey()+ " : "+en.getValue());
+		}
+		
+	}
+
+}
+-----------------------------------------------------------------------------------------------
+package javademo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class hash {
+	public static void main(String a[]) {
+		HashMap<String, Integer> map=new HashMap<>();
+		map.put("color1", "red");
+		map.put("color2", "black");
+		map.put("color3", "pink");
+		for(Map.Entry<String, Integer> en : map.entrySet()) {
+		System.out.println(en.getKey()+ " : "+en.getValue());
+		}
+		
+	}
+
+}
+-----------------------------------------------------------------------------------------------------
+
+
+package javademo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class hash {
+	public static void main(String a[]) {
+		HashMap<String, Integer> map=new HashMap<>();
+		map.put("veena", 1);
+		map.put("rachu", 2);
+		map.put("venki", 3);
+		for(Map.Entry<String, Integer> en : map.entrySet()) {
+		System.out.println(en.getKey()+ " : "+en.getValue());
+		}
+		
+	}
+
+}
+--------------------------------------------------------------------------------------------------------
+package javademo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class hash {
+	public static void main(String a[]) {
+		HashMap<String, Book> map=new HashMap<>();
+		HashMap<String, employee> map1=new HashMap<>();
+		HashMap<String, teacher> map2=new HashMap<>();
+		Book B1=new Book("Ramyan", 1 , 500);
+		Book B2=new Book("mahabhart", 2 , 700);
+		employee e1=new employee("Rachith", 1 , 500);
+		employee e2=new employee("Rachu", 2 , 400);
+		teacher t1=new teacher("kusuma", 1 , 1);
+		teacher t2=new teacher("Reka", 2 , 2);
+		map.put("Book1", B1);
+		map.put("Book2", B2);
+		map1.put("employee1", e1);
+		map1.put("employee2", e2);
+		map2.put("teacher1", t1);
+		map2.put("teacher2", t2);
+		for(Map.Entry<String, Book > en : map.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+		for(Map.Entry<String, employee > en : map1.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+		for(Map.Entry<String, teacher > en : map2.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+	
+		
+	}
+
+}
+class Book{
+	String name;
+	int id;
+	int price;
+	public Book(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
+class employee{
+	String name;
+	int id;
+	int price;
+	public employee(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
+class teacher{
+	String name;
+	int id;
+	int price;
+	public teacher(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
+----------------------------------------------------------------------------------------------
+package javademo;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+
+public class hash {
+	public static void main(String a[]) {
+		HashMap<String, Book> map=new HashMap<>();
+		HashMap<String, employee> map1=new HashMap<>();
+		HashMap<String, teacher> map2=new HashMap<>();
+		ArrayList<String> Book = new ArrayList<String>();
+		 
+		Book B1=new Book("Ramyan", 1 , 500);
+		Book B2=new Book("mahabhart", 2 , 700);
+		 Book.add("kannada");
+		 Book.add("English");
+		 Book.add("Social");
+		employee e1=new employee("Rachith", 1 , 500);
+		employee e2=new employee("Rachu", 2 , 400);
+		teacher t1=new teacher("kusuma", 1 , 1);
+		teacher t2=new teacher("Reka", 2 , 2);
+		map.put("Book1", B1);
+		map.put("Book2", B2);
+		map1.put("employee1", e1);
+		map1.put("employee2", e2);
+		map2.put("teacher1", t1);
+		map2.put("teacher2", t2);
+		System.out.println(Book);
+		for(Map.Entry<String, Book > en : map.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+		for(Map.Entry<String, employee > en : map1.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+		for(Map.Entry<String, teacher > en : map2.entrySet()) {
+			System.out.println(en.getKey()+ " : "+en.getValue());
+			}
+	
+		
+	}
+
+}
+class Book{
+	String name;
+	int id;
+	int price;
+	public Book(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
+class employee{
+	String name;
+	int id;
+	int price;
+	public employee(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
+class teacher{
+	String name;
+	int id;
+	int price;
+	public teacher(String name,int id,int price) {
+		this.name=name;
+		this.id=id;
+		this.price=price;
+	}
+	public String toString() {
+		return "Name: "+name+ "\n id :"+id+"\n price:"+price;
+	}
+}
