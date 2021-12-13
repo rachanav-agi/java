@@ -1,0 +1,47 @@
+package demoo;
+
+public class rachana {
+	 public static void main(String aa[]) 
+	    {
+
+	        cal c= (int x,int y) -> 
+	        {
+	            int z=x+y;
+	            return z;
+	        };
+
+
+	        System.out.println(c.add(9,7));
+	        }
+	    }
+	 
+	 
+	interface cal
+	{
+	    int add(int a,int b);
+	}
+
+-----------------------------------------------------------------------------------------------------------------------
+package demoo;
+import java.util.ArrayList;
+
+public class count {
+	public static void main(String aa[]) 
+    {
+        ArrayList<String> list=new ArrayList<>();
+
+        list.add("djch");
+
+        list.add("djch");
+
+        list.add("djch");
+
+        list.add("djch");
+
+        list.add("djch");
+        list.forEach(
+                (String n)->System.out.println(n));
+    }
+}
+
+
